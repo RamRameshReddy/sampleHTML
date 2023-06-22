@@ -1,46 +1,54 @@
-<h1>Book</h1>
-  <h2>Chapter 1</h2>
-   <h3>Section 1</h3> 
-    <h4>Section 2</h4>
-    <p>
-    The history of Java is very interesting. 
-  </p>
- <hr>
- <ul>
-  <li>MILK</li>
-  <li>EGGS</li>
- <li>Chicken</li>
-  EGGS
-</ul>
-Java was originally designed for interactive television, but it was too advanced technology for the digital cable television industry at the time. The history of Java starts with the Green Team. Java team members (also known as Green Team), initiated this project to develop a language for digital devices such as set-top boxes, televisions, etc. However, it was best suited for internet programming. Later, Java technology was incorporated by Netscape.
+<html lang="en">
 
-<ol>
-  <li>MILK</li>
-  <li>EGGS</li>
- <li>Chicken</li>
-  
-</ol>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="calculator.css" />
+    <script src="calculator.js"></script>
+</head>
 
-<ol>
-  <li>MILK</li>
-  <li>EGGS</li>
- <li>Chicken</li>
- <ul>
-  <li>MILK</li>
-  <li>EGGS</li>
- <li>Chicken</li>
-  
-</ul>
-</ol>
-The principles for creating Java programming were "Simple, Robust, Portable, Platform-independent, Secured, High Performance, Multithreaded, Architecture Neutral, Object-Oriented, Interpreted, and Dynamic". Java was developed by James Gosling, who is known as the father of Java, in 1995. James Gosling and his team members started the project in the early '90s.
-<p>
-James Gosling - founder of java
-</p>
-Currently, Java is used in internet programming, mobile devices, games, e-business solutions, etc. Following are given significant points that describe the history of Java.
-    
-  <h2>Chapter 2</h2>
-    <h3>Section 1</h3>
-      <h4>Diagram 1</h4>
-  <h2>Chapter 3</h2>
-   <h3> Section 1</h3>
-    <h4>Section 2</h4>
+<body>
+    <header>
+        <!-- Image and text -->
+        <nav class="navbar navbar-light">
+            <a class="navbar-brand" href="#">
+                <img src="./header-logo.png" alt="" class="d-inline-block align-top header-logo" />
+                <span class="mt-4">GitDemo</span>
+            </a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="card text-center">
+            <div class="card-header">
+                <h2>Simple Calculator</h2>
+            </div>
+            <div class="card-body">
+                <div class="input-group">
+                    <input type="number" class="form-control ml-4" placeholder="First number" id="firstNumber" />
+                    <input type="number" class="form-control ml-4" placeholder="Second number" id="secondNumber" />
+                    <input type="number" class="form-control ml-4" placeholder="Result" id="result" />
+                </div>
+                <div class="calculator-btn mx-auto p-4">
+                    <button type="button" class="btn btn-primary btn-lg btn-block mt-4" onclick="divide()">
+                        Divide
+                    </button>
+                    <button type="button" class="btn btn-primary btn-lg btn-block mt-4" onclick="multiply()">
+                        Multiply
+                    </button>
+                    <button type="button" class="btn btn-primary btn-lg btn-block mt-4" onclick="subtract()">
+                        Subtract
+                    </button>
+                    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="add()">
+                        Add
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <img src="./footer-logo.svg" class="footer-img" />
+            &copy; Copyright 2021 Maveric Systems Limited private
+        </div>
+</body>
+
+</html>
